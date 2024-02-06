@@ -12,10 +12,10 @@
 
 <h4>Paschal Ugoh</h4>
 
-</p>
-    <a href="https://skillicons.dev">
-      <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=github" /></a>
-      <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
-      <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=twitter" /></a>
-    </a>
+<p align="center">
+  <a href="https://skillicons.dev">
+    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=github" /></a>
+    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
+    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=twitter" /></a>
+  </a>
 </p>
