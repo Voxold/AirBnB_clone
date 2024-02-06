@@ -24,10 +24,7 @@
 
 
 <h4>Paschal Ugoh</h4>
-<p align="center">
-  <a href="https://skillicons.dev">
-    <a><img src="https://skillicons.dev/icons?i=github" /></a>
-    <a><img src="https://skillicons.dev/icons?i=linkedin" /></a>
-    <a><img src="https://skillicons.dev/icons?i=twitter" /></a>
-  </a>
-</p>
+
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
+[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
