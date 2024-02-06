@@ -26,7 +26,7 @@
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=github" width='10px' height='10px'/></a>
+    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=github" width='100px' height='100px'/></a>
     <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
     <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=twitter" /></a>
   </a>
