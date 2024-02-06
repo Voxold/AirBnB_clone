@@ -12,7 +12,7 @@
 
 <h3> Contributers :</h3>
 
-<h4>Bilal Ajaha</h4>
+<h3 align="center">Bilal Ajaha</h3>
 
 <p align="center">
   <a href="https://skillicons.dev">
@@ -22,11 +22,11 @@
   </a>
 </p>
 
-<h4>Paschal Ugoh</h4>
+<h3 align="center">Paschal Ugoh</h3>
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=github" /></a>
+    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=github" width='10px' height='10px'/></a>
     <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
     <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=twitter" /></a>
   </a>
