@@ -13,8 +13,9 @@
 
 <h3> Contributers :</h3>
 
-<h4>Bilal Ajaha</h4>
+
 <p align="center">
+<h4>Bilal Ajaha</h4>
   <a href="https://skillicons.dev">
     <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=github" /></a>
     <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
@@ -25,6 +26,4 @@
 
 <h4>Paschal Ugoh</h4>
 
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
-[![My Skills](https://skillicons.dev/icons?i=js,html,css,wasm)](https://skillicons.dev)
+
