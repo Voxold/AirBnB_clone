@@ -16,9 +16,9 @@
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=github" /></a>
-    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
-    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=twitter" /></a>
+    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=github" width='40px' height='40px'/></a>
+    <a href="https://www.linkedin.com/in/voxold/"><img src="https://skillicons.dev/icons?i=linkedin" width='40px' height='40px'/></a>
+    <a href="https://twitter.com/bilal_ajaha"><img src="https://skillicons.dev/icons?i=twitter" width='40px' height='40px'/></a>
   </a>
 </p>
 
@@ -26,8 +26,8 @@
 
 <p align="center">
   <a href="https://skillicons.dev">
-    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=github" width='100px' height='100px'/></a>
-    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=linkedin" /></a>
-    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=twitter" /></a>
+    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=github" width='40px' height='40px'/></a>
+    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=linkedin" width='40px' height='40px'/></a>
+    <a href="https://github.com/Voxold"><img src="https://skillicons.dev/icons?i=twitter" width='40px' height='40px'/></a>
   </a>
 </p>
