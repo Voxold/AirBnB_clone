@@ -5,6 +5,9 @@ from datetime import datetime
 
 
 class BaseModel:
+    """
+    BaseModel class for common attributes/methods for other classes.
+    """
     def __init__(self,*args,**kwargs):
         """
         Initializes the BaseModel instance with unique id and creation/update timestamps.
