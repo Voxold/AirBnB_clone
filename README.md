@@ -9,12 +9,12 @@
 
 <h3>How To Start ?</h3>
 <p>1 - Clone the project to your machine :</p>
-<p>2 - Execute the console.py file and enjoy!</p>
+<p>2 - Execute the <code>console.py</code> file and enjoy!</p>
 
 <h3>How To Use ?</h3>
-<p>1 - Execution console.py file</p>
+<p>1 - Execution <code>console.py</code> file</p>
 <p> 2 - Manage your project's objects by writing commands : </p>
-  <p> => (hbnb) <command> [agruments]</p>
+  <p> => <code>(hbnb) <command> [agruments]</code></p>
 
 
 
