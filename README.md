@@ -18,13 +18,12 @@
 
 
 
-<tr>
-<th>Commands</th>
-<th>Description</th>
-<th>Arguments</th>
-</tr>
-
-<tbody>
+<table>
+  <tr>
+    <th>Commands</th>
+    <th>Description</th>
+    <th>Arguments</th>
+  </tr>
   <tr>
     <td><code>create</code></td>
     <td>Create new class</td>
@@ -35,15 +34,15 @@
     <td>Deletes an instance</td>
     <td><code>&lt;class name&gt; &lt;obj id&gt;</code></td>
   </tr>
-<tr>
+  <tr>
     <td><code>update</code></td>
     <td>Updates an instance</td>
     <td><code>&lt;class name&gt; &lt;id&gt; &lt;attribute name&gt; &lt;attribute value&gt;</code></td>
   </tr>
   <tr>
     <td><code>help</code></td>
-    <td>provide description about all commands</td>
-    <td>command</td>
+    <td>Provide description about all commands</td>
+    <td>Command</td>
   </tr>
   <tr>
     <td><code>all</code></td>
@@ -57,15 +56,15 @@
   </tr>
   <tr>
     <td><code>EOF</code></td>
-    <td>exit the program</td>
+    <td>Exit the program</td>
     <td>--</td>
   </tr>
   <tr>
     <td><code>quit</code></td>
-    <td>exit the program</td>
+    <td>Exit the program</td>
     <td>--</td>
   </tr>
-</tbody>
+</table>
 
 
 <h3> Contributers :</h3>
