@@ -5,10 +5,68 @@
 <h3> Description :</h3>
 <p>Hello and welcome to our "AirBnB Clone - The Console" Project! This project is like a copy of the popular AirBnB website. Our console helps with different tasks, such as making new users or places, getting information from different places, doing things like counting or figuring out statistics, changing things about objects, and even getting rid of objects in a smooth way. Our console project is all about handling information really well.</p>
 
+<h2>Explore the features and functionalities of our command interpreter.</h2>
 
-<h3>Using :</h3>
-<h3></h3>
-<h3></h3>
+<h3>How To Start ?</h3>
+1 - Clone the project to your machine :
+2 - Execute the console.py file and enjoy!
+
+<h3>How To Use ?</h3>
+1 - Execution console.py file, 
+2 - Manage your project's objects by writing commands : 
+  => (hbnb) <command> [agruments]
+
+
+
+<tr>
+<th>Commands</th>
+<th>Description</th>
+<th>Arguments</th>
+</tr>
+
+<tbody>
+  <tr>
+    <td><code>create</code></td>
+    <td>Create new class</td>
+    <td>Class name</td>
+  </tr>
+  <tr>
+    <td><code>destroy</code></td>
+    <td>Deletes an instance</td>
+    <td><code>&lt;class name&gt; &lt;obj id&gt;</code></td>
+  </tr>
+<tr>
+    <td><code>update</code></td>
+    <td>Updates an instance</td>
+    <td><code>&lt;class name&gt; &lt;id&gt; &lt;attribute name&gt; &lt;attribute value&gt;</code></td>
+  </tr>
+  <tr>
+    <td><code>help</code></td>
+    <td>provide description about all commands</td>
+    <td>command</td>
+  </tr>
+  <tr>
+    <td><code>all</code></td>
+    <td>Prints all string representation of all instances</td>
+    <td><code>&lt;class name&gt;</code> or not</td>
+  </tr>
+  <tr>
+    <td><code>show</code></td>
+    <td>Prints the string representation of an instance</td>
+    <td><code>&lt;class name&gt; &lt;obj id&gt;</code></td>
+  </tr>
+  <tr>
+    <td><code>EOF</code></td>
+    <td>exit the program</td>
+    <td>--</td>
+  </tr>
+  <tr>
+    <td><code>quit</code></td>
+    <td>exit the program</td>
+    <td>--</td>
+  </tr>
+</tbody>
+
 
 <h3> Contributers :</h3>
 
