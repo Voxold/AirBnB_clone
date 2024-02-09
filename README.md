@@ -8,13 +8,13 @@
 <h2>Explore the features and functionalities of our command interpreter.</h2>
 
 <h3>How To Start ?</h3>
-1 - Clone the project to your machine :
-2 - Execute the console.py file and enjoy!
+<p>1 - Clone the project to your machine :</p>
+<p>2 - Execute the console.py file and enjoy!</p>
 
 <h3>How To Use ?</h3>
-1 - Execution console.py file, 
-2 - Manage your project's objects by writing commands : 
-  => (hbnb) <command> [agruments]
+<p>1 - Execution console.py file</p>
+<p> 2 - Manage your project's objects by writing commands : </p>
+  <p> => (hbnb) <command> [agruments]</p>
 
 
 
