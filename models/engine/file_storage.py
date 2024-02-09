@@ -1,10 +1,14 @@
 #!/usr/bin/python3
 
 import json
+import models.base_model import BaseModel
+import models.user import User
 
 class FileStorage:
     __file_path = "file.json"
     __objects = {}
+    __file_path = "file.json"
+    __objects = {"BaseModel": BaseModel, "User": User}
 
     def all(self):
         """Returns the dictionary __objects"""
