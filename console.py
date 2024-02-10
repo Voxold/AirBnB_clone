@@ -6,6 +6,7 @@ from models import storage
 from models.base_model import BaseModel
 from models.user import User  # Import other model classes as needed
 
+
 class HBNBCommand(cmd.Cmd):
     """
     HBNBCommand class for the command interpreter.
@@ -26,7 +27,8 @@ class HBNBCommand(cmd.Cmd):
         pass
 
     def do_create(self, arg):
-        """Create a new instance of BaseModel or User, save it, and print its id."""
+        """Create a new instance of BaseModel or User,\
+        save it, and print its id."""
         if not arg:
             print("** class name missing **")
             return
@@ -39,7 +41,8 @@ class HBNBCommand(cmd.Cmd):
             print("** class doesn't exist **")
 
     def do_show(self, arg):
-        """Print the string representation of an instance (BaseModel or User)."""
+        """Print the string representation of\
+        an instance (BaseModel or User)."""
         args = arg.split()
         if not args:
             print("** class name missing **")
@@ -86,13 +89,15 @@ class HBNBCommand(cmd.Cmd):
             print("** no instance found **")
 
     def do_all(self, arg):
-        """Print all string representations of instances (BaseModel or User)."""
+        """Print all string representations of\
+        instances (BaseModel or User)."""
         args = arg.split()
         if not args or args[0] not in storage.classes():
             print("** class doesn't exist **")
             return
 
-        instances = [str(obj) for key, obj in storage.all().items() if args[0] in key]
+        instances = [str(obj) for key, obj in storage.all().items()
+            if args and args[0] in key]
         print(instances)
 
     def do_update(self, arg):
@@ -135,6 +140,7 @@ class HBNBCommand(cmd.Cmd):
             obj.save()
         else:
             print("** attribute doesn't exist **")
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
