@@ -3,6 +3,7 @@
 import unittest
 from models.state import state
 
+
 class TestState(unittest.TestCase):
     """State Test"""
 
@@ -10,7 +11,7 @@ class TestState(unittest.TestCase):
         """State Attribytes Test"""
 
         result = State()
-        self.assertEqual(result.name,'')
+        self.assertEqual(result.name, '')
 
 
 if __name__ == "__main":
