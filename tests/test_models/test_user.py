@@ -8,7 +8,7 @@ from models.user import User
 class TestUser(unittest.TestCase):
     """User Unittest"""
 
-    def test_attributes(self):
+    def test_atr(self):
         """User attributes Test"""
 
         result = User()
