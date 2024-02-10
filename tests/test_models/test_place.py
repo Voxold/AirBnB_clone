@@ -23,5 +23,6 @@ class TestPlace(unittest.TestCase):
         self.assertEqual(result.longitude, 0.0)
         self.assertEqual(result.amenity_ids, [])
 
+
 if __name__ == "__main":
     unittest.main()
