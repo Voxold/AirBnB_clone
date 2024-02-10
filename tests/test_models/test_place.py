@@ -7,7 +7,7 @@ from models.place import Place
 class TestPlace(unittest.TestCase):
     """unittest for Place"""
 
-    def test_attributes(self):
+    def test_atr(self):
         """Place attributes Test"""
 
         result = Place()
