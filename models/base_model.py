@@ -8,18 +8,18 @@ class BaseModel:
     """
     BaseModel class for common attributes/methods for other classes.
     """
-    def __init__(self,*args,**kwargs):
+    def __init__(self, *args, **kwargs):
         """
-        Initializes the BaseModel instance with unique id and creation/update timestamps.
+        Initiates the BaseModel with a unique ID \
+        and timestamps for creation and updates.
         """
         if kwargs:
             for key, value in kwargs.items():
-                if key == '__class__':
-                    continue
-                elif key == 'created_at' or key == 'updated_at':
-                    setattr(self, key, datetime.strptime(value, "%Y-%m-%dT%H:%M:%S.%f"))
-                else:
-                    setattr(self, key, value)
+                if key != '__class__':
+                    if key == 'created_at' or key == 'updated_at':
+                        self.__dict__[key] = datetime.fromisoformat(value)
+                    else:
+                        self.__dict__[key] = value
         else:
             self.id = str(uuid.uuid4())
             self.created_at = datetime.now()
@@ -29,8 +29,9 @@ class BaseModel:
         """
         Returns a string representation of the BaseModel instance.
         """
-        return "[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__)
-    
+
+        return f"[{self.__class__.__name__}] ({self.id}) {self.__dict__}"
+
     def save(self):
         """
         Updates the 'updated_at' attribute with the current datetime.
