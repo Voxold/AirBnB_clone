@@ -6,10 +6,10 @@ from models.user import User
 
 
 class TestUser(unittest.TestCase):
-    """unittest_User"""
+    """User Unittest"""
 
     def test_attributes(self):
-        """test for User attributes"""
+        """User attributes Test"""
 
         result = User()
 
