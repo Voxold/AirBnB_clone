@@ -1,4 +1,3 @@
-
 #!/usr/bin/python3
 
 
@@ -14,6 +13,7 @@ class TestAmenity(unittest.TestCase):
 
         result = Amenity()
         self.assertEqual(result.name, '')
+
 
 if __name__ == "__main__":
     unittest.main()
