@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import cmd
-import json
+import sys
 from models import storage
 from models.base_model import BaseModel
 from models.user import User
@@ -10,7 +10,7 @@ from models.state import State
 from models.city import City
 from models.amenity import Amenity
 from models.review import Review
-
+from models import storage
 
 
 class HBNBCommand(cmd.Cmd):
@@ -95,16 +95,21 @@ class HBNBCommand(cmd.Cmd):
             print("** no instance found **")
 
     def do_all(self, arg):
-        """Print all string representations of\
-        instances (BaseModel or User)."""
+        """Prints all string representation of all instances."""
         args = arg.split()
-        if not args or args[0] not in storage.classes():
-            print("** class doesn't exist **")
-            return
-
-        instances = [str(obj) for key, obj in storage.all().items()
-            if args and args[0] in key]
-        print(instances)
+        obj_list = []
+        if not args:
+            for obj in storage.all().values():
+                obj_list.append(str(obj))
+        else:
+            class_name = args[0]
+            if class_name not in storage.classes():
+                print("** class doesn't exist **")
+                return
+            for key, obj in storage.all().items():
+                if class_name == key.split('.')[0]:
+                    obj_list.append(str(obj))
+        print(obj_list)
 
     def do_update(self, arg):
         """Update an instance based on the class name and id."""
