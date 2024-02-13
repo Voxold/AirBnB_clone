@@ -50,10 +50,10 @@ class BaseModel:
         Converts the BaseModel instance to a dictionary.
         """
 
-        model_dict = self.__dict__.copy()
+        model_dict = dict(self.__dict__)
         model_dict['__class__'] = self.__class__.__name__
         model_dict['created_at'] = \
-            self.created_at.isoformat(model_dict.get('created_at'))
-        model_dict['updated_at'] = \
-            self.updated_at.isoformat(model_dict.get('updated_at'))
+            datetime.isoformat(model_dict.get('created_at'))
+        dictionary['updated_at'] = \
+            datetime.isoformat(model_dict.get('updated_at'))
         return model_dict
