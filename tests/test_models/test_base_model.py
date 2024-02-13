@@ -35,7 +35,23 @@ class TestBaseModel(unittest.TestCase):
         ({self.obj.id}) {self.obj.__dict__}"
         self.assertEqual(str(self.obj), expected_str)
 
-    def test_to_dict(self):
-        """Test to_dict method"""
+    def test_initialiazation_with_dict(self):
+        """
+        Testing if init with a dictionary (kwargs) sets attributes correctly
+        """
+        modelD = {
+                    'id': 'test_id',
+                    'created_at': '2022-01-01T00:00:00.000000',
+                    'updated_at': '2022-02-01T00:00:00.000000',
+                    'custom_attr': 'custom_value'}
 
-        obj_json = self.obj.to_dict()
+        model_instance = BaseModel(**modelD)
+
+        self.assertEqual(model_instance.id, 'test_id')
+        self.assertEqual(model_instance.created_at, datetime(2022, 1, 1))
+        self.assertEqual(model_instance.updated_at, datetime(2022, 2, 1))
+        self.assertEqual(model_instance.custom_attr, 'custom_value')
+
+
+if __name__ == '__main__':
+    unittest.main()
