@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-
 import cmd
 import sys
 from models import storage
@@ -17,6 +16,7 @@ class HBNBCommand(cmd.Cmd):
     """
     HBNBCommand class for the command interpreter.
     """
+
     prompt = "(hbnb) "
 
     def do_quit(self, arg):
@@ -25,7 +25,7 @@ class HBNBCommand(cmd.Cmd):
 
     def do_EOF(self, arg):
         """Exit the program"""
-        print()
+        print()  # New line for aesthetics
         return True
 
     def emptyline(self):
