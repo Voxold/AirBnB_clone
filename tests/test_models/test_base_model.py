@@ -74,7 +74,8 @@ class TestBaseModel(unittest.TestCase):
     def test_instantiation_with_args_and_kwargs(self):
         date = datetime.today()
         date_iso = date.isoformat()
-        Base = BaseModel("12", id="345", created_at=date_iso, updated_at=date_iso)
+        Base = BaseModel("12", id="345", \
+                created_at=date_iso, updated_at=date_iso)
         self.assertEqual(Base.id, "345")
         self.assertEqual(Base.created_at, date)
         self.assertEqual(Base.updated_at, date)
