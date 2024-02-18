@@ -62,3 +62,6 @@ class TestBaseModel(unittest.TestCase):
         n = self.base.__class__.__name__
         expected_str = f"[{n}] ({self.base.id}) <{self.base.__dict__}>"
         self.assertEqual(self.base.__str__(), expected_str)
+
+if __name__ == '__main__':
+    unittest.main()
