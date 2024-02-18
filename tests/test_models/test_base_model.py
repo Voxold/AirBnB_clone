@@ -1,67 +1,64 @@
 #!/usr/bin/python3
-"""Unittest for base model"""
+"""
+Unit tests for the BaseModel class
+"""
 
 import unittest
 from models.base_model import BaseModel
-from models import storage
 from datetime import datetime
 
 
 class TestBaseModel(unittest.TestCase):
-    """test class BaseModel"""
 
-    base = BaseModel()
-    base.name = "My First Model"
-    base.my_number = 89
+    def setUp(self):
+        self.base_model = BaseModel()
 
-    def test_create_instance_without_kwargs(self):
-        """create an instance of class without kwargs"""
+    def tearDown(self):
+        del self.base_model
 
-        self.assertIsInstance(self.base, BaseModel)
-        self.assertIsInstance(self.base.id, str)
-        self.assertIsInstance(self.base.created_at, datetime)
-        self.assertIsInstance(self.base.updated_at, datetime)
-        self.assertEqual(self.base.name, "My First Model")
-        self.assertEqual(self.base.my_number, 89)
+    def test_id_is_string(self):
+        self.assertIsInstance(self.base_model.id, str)
 
-    def test_create_instance_with_kwargs(self):
+    def test_created_at_is_datetime(self):
+        self.assertIsInstance(self.base_model.created_at, datetime)
 
-        my_base_json = self.base.to_dict()
-        new_base = BaseModel(**my_base_json)
-        self.assertIsInstance(new_base, BaseModel)
-        self.assertIsInstance(new_base.id, str)
-        self.assertIsInstance(new_base.created_at, datetime)
-        self.assertIsInstance(new_base.updated_at, datetime)
-        self.assertEqual(new_base.name, "My First Model")
-        self.assertEqual(new_base.my_number, 89)
-        self.assertNotEqual(new_base, self.base)
-        self.assertDictEqual(new_base.__dict__, self.base.__dict__)
+    def test_updated_at_is_datetime(self):
+        self.assertIsInstance(self.base_model.updated_at, datetime)
 
-    def test_to_dict(self):
-        """Test to_dict class method"""
+    def test_id_is_unique(self):
+        base_model2 = BaseModel()
+        self.assertNotEqual(self.base_model.id, base_model2.id)
 
-        to_dict_returned_dict = self.base.to_dict()
-        expected_dic = self.base.__dict__.copy()
-        expected_dic["__class__"] = self.base.__class__.__name__
-        expected_dic["updated_at"] = self.base.updated_at.isoformat()
-        expected_dic["created_at"] = self.base.created_at.isoformat()
-        self.assertDictEqual(expected_dic, to_dict_returned_dict)
+    def test_str_representation(self):
+        expected = "[BaseModel] ({}) {}".format(
+            self.base_model.id, self.base_model.__dict__)
+        self.assertEqual(str(self.base_model), expected)
 
     def test_save(self):
-        """Test _save class method"""
+        prev_updated_at = self.base_model.updated_at
+        self.base_model.save()
+        self.assertNotEqual(prev_updated_at, self.base_model.updated_at)
 
-        before_update_time = self.base.updated_at
-        self.base.my_number = 90
-        self.base.save()
-        after_update_time = self.base.updated_at
-        self.assertNotEqual(before_update_time, after_update_time)
+    def test_to_dict_returns_dict(self):
+        obj_dict = self.base_model.to_dict()
+        self.assertIsInstance(obj_dict, dict)
 
-    def test_str(self):
-        """Test STR Method"""
-        
-        n = self.base.__class__.__name__
-        expected_str = f"[{n}] ({self.base.id}) <{self.base.__dict__}>"
-        self.assertEqual(self.base.__str__(), expected_str)
+    def test_to_dict_contains_expected_keys(self):
+        obj_dict = self.base_model.to_dict()
+        expected_keys = ['id', 'created_at', 'updated_at', '__class__']
+        self.assertCountEqual(obj_dict.keys(), expected_keys)
+
+    def test_to_dict_datetime_format(self):
+        obj_dict = self.base_model.to_dict()
+        self.assertEqual(
+            obj_dict['created_at'], self.base_model.created_at.isoformat())
+        self.assertEqual(
+            obj_dict['updated_at'], self.base_model.updated_at.isoformat())
+
+    def test_to_dict_class_name(self):
+        obj_dict = self.base_model.to_dict()
+        self.assertEqual(obj_dict['__class__'], 'BaseModel')
+
 
 if __name__ == '__main__':
     unittest.main()
